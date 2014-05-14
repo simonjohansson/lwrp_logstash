@@ -1,0 +1,9 @@
+output {  
+<% @data.each do |name, args| %>
+  <%= name %> {
+    <% args.each do |arg, val| %>
+      <%= arg %> => <%= val %>
+    <% end %>
+  }
+<% end %>
+}
