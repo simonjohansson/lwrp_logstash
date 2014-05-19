@@ -3,7 +3,7 @@ action :create do
   name = @new_resource.name
   template "/etc/logstash/conf.d/#{name}.conf" do
     source "output.erb"
-    cookbook "lwrp_cookbook"
+    cookbook "lwrp_logstash"
     action :create
     variables({
      :data => data
