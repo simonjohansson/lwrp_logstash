@@ -1,5 +1,3 @@
-use_inline_resources
-
 action :create do
   data = @new_resource.data 
   name = @new_resource.name
@@ -10,6 +8,7 @@ action :create do
     variables({
      :data => data
     })
+    notifies :restart, resources(:service => "logstash"), :delayed
   end
 end
 
