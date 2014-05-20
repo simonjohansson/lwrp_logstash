@@ -1,3 +1,5 @@
+use_inline_resources
+
 action :create do
   data = @new_resource.data 
   name = @new_resource.name

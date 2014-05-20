@@ -4,5 +4,4 @@ maintainer_email 'simon@simonjohansson.com'
 license          ''
 description      'Installs/Configures lwrp_logstash'
 long_description 'Installs/Configures lwrp_logstash'
-version          '0.1.3'
-
+version          '0.1.4'
