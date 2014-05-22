@@ -5,6 +5,8 @@ action :create do
     source "input.erb"
     cookbook "lwrp_logstash"
     action :create
+    owner "logstash"
+    group "logstash"
     variables({
      :data => data
     })
