@@ -5,3 +5,6 @@ license          ''
 description      'Installs/Configures lwrp_logstash'
 long_description 'Installs/Configures lwrp_logstash'
 version          '0.2.0'
+
+depends 'yum', '~> 3.0.6'
+depends 'apt', '~> 2.3.10'
